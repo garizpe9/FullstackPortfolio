@@ -1,0 +1,123 @@
+/* Universal */
+
+body {
+  font-family: "Merriweather", serif;
+  background: radial-gradient(circle, #484d52 0%, rgb(0, 0, 0) 100%);
+}
+
+nav {
+  background-color: rgb(42, 48, 80);
+  border-bottom-style: groove;
+}
+.container {
+  padding-top: 12px;
+}
+
+h1 {
+  color: white;
+}
+
+h5 {
+  color: white;
+}
+
+h5:link,
+h5:hover {
+  color: black;
+  text-decoration: none;
+}
+
+#contactme {
+  height: 10em;
+  position: relative;
+}
+
+#contactme h5 {
+  color: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+article {
+  background-color: white;
+  padding-top: 12px;
+  border-radius: 20px;
+}
+
+footer {
+  color: snow;
+  border-top-style: groove;
+  background-color: rgb(42, 48, 80);
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+/* Portfolio */
+.card-title {
+  background-color: rgb(42, 48, 80);
+  padding-top: 20px;
+}
+
+.card {
+  border: none;
+}
+
+.card-text {
+  color: rgb(17, 37, 153);
+}
+
+#color {
+  color: black;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 640px) {
+  /* For tablets: */
+  nav {
+    width: 100%;
+  }
+  .col-s-1 {
+    width: 8.33%;
+  }
+  .col-s-2 {
+    width: 16.66%;
+  }
+  .col-s-3 {
+    width: 25%;
+  }
+  .col-s-4 {
+    width: 33.33%;
+  }
+  .col-s-5 {
+    width: 41.66%;
+  }
+  .col-s-6 {
+    width: 50%;
+  }
+  .col-s-7 {
+    width: 58.33%;
+  }
+  .col-s-8 {
+    width: 66.66%;
+  }
+  .col-s-9 {
+    width: 75%;
+  }
+  .col-s-10 {
+    width: 83.33%;
+  }
+  .col-s-11 {
+    width: 91.66%;
+  }
+  .col-s-12 {
+    width: 100%;
+  }
+}
