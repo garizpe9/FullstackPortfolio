@@ -15,14 +15,14 @@ $("#send-fish").on("click", function(event) {
       };
     
 
-    $.post("/emailinfo", mailOptions, function(){ 
+    $.post("/form/emailinfo", mailOptions, function(){ 
         console.log ("Server received Data")
 
     })
  
     alert("Thank you for your email, "+ name +"!" );
  
-    console.log(name)
+    console.log(mailOptions)
  
    // empty each input box by replacing the value with an empty string
    $("#name").val(""),
