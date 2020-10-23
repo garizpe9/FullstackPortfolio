@@ -25,7 +25,7 @@ module.exports = function(app) {
     });
 
     app.post('/form/emailinfo',(req,res) =>{
-        sendMail (req.body.from, req.body.email, req.body.subject, req.body.text, function (err, data){
+        sendMail (req.body.from, req.body.subject, req.body.text, function (err, data){
             if (err){
                 res.status(500).json({message: 'Internal Error'});
             }else{
