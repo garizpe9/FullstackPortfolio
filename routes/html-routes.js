@@ -1,4 +1,5 @@
 const path = require("path");
+const sendMail = require('../mail')
 
 module.exports = function(app) {
     app.get('/',(req,res) => { 
@@ -6,7 +7,11 @@ module.exports = function(app) {
     });
 
     app.get('/form',(req,res) => { 
-        res.sendFile(path.join(__dirname,"../form.html"))
+        res.sendFile(path.join(__dirname,"../public/form.html"))
+    });
+
+    app.get('/portfolio',(req,res) => { 
+        res.sendFile(path.join(__dirname,"../public/portfolio.html"))
     });
 
     app.get('/form/emailinfo',(req,res) =>{
