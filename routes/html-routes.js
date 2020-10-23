@@ -2,7 +2,12 @@ const path = require("path");
 const sendMail = require('../mail')
 
 module.exports = function(app) {
+    //html
     app.get('/',(req,res) => { 
+        res.sendFile(path.join(__dirname,"../index.html"))
+    });
+
+    app.get('/index',(req,res) => { 
         res.sendFile(path.join(__dirname,"../index.html"))
     });
 
@@ -13,7 +18,7 @@ module.exports = function(app) {
     app.get('/portfolio',(req,res) => { 
         res.sendFile(path.join(__dirname,"../public/portfolio.html"))
     });
-
+    //email route
     app.get('/form/emailinfo',(req,res) =>{
         console.log('Dataget:', req.body)
         res.json({message: "Success" })
