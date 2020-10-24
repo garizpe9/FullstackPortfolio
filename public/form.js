@@ -3,7 +3,7 @@ $("#send-fish").on("click", function(event) {
      
     const name = $("#name").val().trim();
     const email = $("#email").val().trim();
-    const subject = $("#subject").val().trim();
+    const subject = 'PORTFOLIO EMAIL: ' + $("#subject").val().trim();
     const text = 'from '+name +': '+ $("#message").val().trim()
     
       var mailOptions = {
