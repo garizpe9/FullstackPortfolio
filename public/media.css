@@ -124,6 +124,8 @@ footer {
   .col-s-12 {
     width: 100%;
   }
+}
+@media screen and (max-width: 600px) {
   #contactcard {
     height: 412px;
   }
