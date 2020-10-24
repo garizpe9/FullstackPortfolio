@@ -21,6 +21,10 @@ h5 {
   color: white;
 }
 
+#contactcard {
+  height: 512px;
+}
+
 h5:link,
 h5:hover {
   color: black;
@@ -121,6 +125,6 @@ footer {
     width: 100%;
   }
   #contactcard {
-    height: 312px;
+    height: 412px;
   }
 }
