@@ -121,9 +121,6 @@ footer {
     width: 100%;
   }
   #contactcard {
-    height: 100%;
-  }
-  h5 {
-    font-size: 50%;
+    height: 312px;
   }
 }
