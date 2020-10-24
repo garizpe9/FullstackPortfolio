@@ -6,13 +6,13 @@ $("#send-fish").on("click", function(event) {
     const subject = $("#subject").val().trim();
     const text = 'from '+name +': '+ $("#message").val().trim()
     
-
-    var mailOptions = {
-        from: email,
-        to: "veliaarizpe@gmail.com",
-        subject: subject,
-        text: text
-      };
+      var mailOptions = {
+      from: email,
+      to: "veliaarizpe@gmail.com",
+      subject: subject,
+      text: text
+    };
+    
     
 
     $.post("/form/emailinfo", mailOptions, function(){ 
