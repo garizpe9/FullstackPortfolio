@@ -120,4 +120,7 @@ footer {
   .col-s-12 {
     width: 100%;
   }
+  #contactcard {
+    height: 75%;
+  }
 }
