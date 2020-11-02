@@ -10,7 +10,6 @@
 
 ## Description
 This uses app is a portfolio of my work. It uses npm packages nodemailer-mailgun-transport, express, express-session, and dotenv. It also uses libraries for jQuery, google font, and bootstrap.
-and HTML5
 
 ## Installation
 Clone or fork the repo to your own device.
